@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak — Orbit Kargo</title>
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Orbit Kargo" />
+  <meta property="og:locale" content="id_ID" />
+  <meta property="og:title" content="Kontak — Orbit Kargo" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="stylesheet" href="assets/global.css" />
+  <link rel="stylesheet" href="assets/kontak.css" />
+  <script>(function () {
+  var P = "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20300%22%20preserveAspectRatio%3D%22xMidYMid%20meet%22%3E%3Crect%20width%3D%22400%22%20height%3D%22300%22%20fill%3D%22%23eef1f5%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%2394a3b8%22%20stroke-width%3D%226%22%20stroke-linejoin%3D%22round%22%3E%3Crect%20x%3D%22158%22%20y%3D%22114%22%20width%3D%2284%22%20height%3D%2272%22%20rx%3D%229%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M161%20183%20L186%20152%20L203%20170%20L215%20158%20L239%20183%20Z%22%20fill%3D%22%2394a3b8%22%2F%3E%3Ccircle%20cx%3D%22219%22%20cy%3D%22134%22%20r%3D%228%22%20fill%3D%22%2394a3b8%22%2F%3E%3C%2Fsvg%3E";
+  function fix(img) {
+    if (img.getAttribute("src") === P) return;
+    img.removeAttribute("srcset");
+    img.setAttribute("data-img-placeholder", "");
+    img.style.backgroundColor = "#eef1f5";
+    img.src = P;
+  }
+  function scan(root) {
+    var list = root.querySelectorAll ? root.querySelectorAll("img") : [];
+    for (var i = 0; i < list.length; i++) if (!list[i].getAttribute("src")) fix(list[i]);
+    if (root.tagName === "IMG" && !root.getAttribute("src")) fix(root);
+  }
+  document.addEventListener("error", function (e) {
+    var t = e.target;
+    if (t && t.tagName === "IMG") fix(t);
+  }, true);
+  function start() {
+    scan(document);
+    if (!window.MutationObserver) return;
+    new MutationObserver(function (records) {
+      for (var i = 0; i < records.length; i++) {
+        var r = records[i];
+        if (r.type === "attributes") {
+          if (r.target.tagName === "IMG" && !r.target.getAttribute("src")) fix(r.target);
+          else if (r.target.tagName === "IMG" && r.target.getAttribute("src") !== P) {
+            r.target.removeAttribute("data-img-placeholder");
+            r.target.style.backgroundColor = "";
+          }
+        } else for (var j = 0; j < r.addedNodes.length; j++) if (r.addedNodes[j].nodeType === 1) scan(r.addedNodes[j]);
+      }
+    }).observe(document.documentElement, { subtree: true, childList: true, attributes: true, attributeFilter: ["src"] });
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start);
+  else start();
+})();</script>
+</head>
+<body>
+  <main class="page-kontak">
+    <header class="page-kontak__box-1">
+      <div class="page-kontak__box-2">
+        <h4 class="page-kontak__text-1">Orbit Kargo</h4>
+        <div class="page-kontak__box-3">
+          <nav class="page-kontak__mega-menu-1" aria-label="Menu utama">
+            <button class="page-kontak__mega-menu-1__burger" type="button" aria-expanded="false" aria-controls="page-kontak__mega-menu-1-drawer" aria-label="Buka menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="page-kontak__mega-menu-1__drawer" id="page-kontak__mega-menu-1-drawer">
+              <ul class="page-kontak__mega-menu-1__list">
+                <li class="page-kontak__mega-menu-1__item">
+                  <a class="page-kontak__mega-menu-1__top" href="#">Layanan</a>
+                </li>
+                <li class="page-kontak__mega-menu-1__item">
+                  <a class="page-kontak__mega-menu-1__top" href="#">Jaringan</a>
+                </li>
+                <li class="page-kontak__mega-menu-1__item">
+                  <a class="page-kontak__mega-menu-1__top" href="#">Tarif</a>
+                </li>
+                <li class="page-kontak__mega-menu-1__item">
+                  <a class="page-kontak__mega-menu-1__top" href="#">Tentang</a>
+                </li>
+                <li class="page-kontak__mega-menu-1__item">
+                  <a class="page-kontak__mega-menu-1__top" href="#">Wawasan</a>
+                </li>
+              </ul>
+              <a class="page-kontak__mega-menu-1__cta" href="kontak.html">Minta penawaran</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="page-kontak__box-4">
+      <div class="page-kontak__box-5">
+        <p class="page-kontak__text-2">Kontak</p>
+        <h1 class="page-kontak__text-3 owd-anim owd-anim--fade-up" data-owd-trigger="scroll">Minta penawaran dalam 2 jam kerja</h1>
+      </div>
+    </section>
+    <section class="page-kontak__box-6">
+      <div class="page-kontak__box-7">
+        <div class="page-kontak__box-8">
+          <p class="page-kontak__text-4">Kontak</p>
+          <h2 class="page-kontak__text-5 owd-anim owd-anim--fade-up" data-owd-trigger="scroll">Kirim pesan</h2>
+          <p class="page-kontak__text-6">Tim kami membalas dengan tarif, estimasi waktu, dan dokumen yang dibutuhkan.</p>
+          <div class="page-kontak__box-9">
+            <p class="page-kontak__text-7">Alamat</p>
+            <p class="page-kontak__text-8">Jl. Yos Sudarso Kav. 30, Jakarta Utara</p>
+          </div>
+          <div class="page-kontak__box-10">
+            <p class="page-kontak__text-9">Telepon</p>
+            <p class="page-kontak__text-10">021 4390 2211</p>
+          </div>
+          <div class="page-kontak__box-11">
+            <p class="page-kontak__text-11">Email</p>
+            <p class="page-kontak__text-12">quote&#64;orbitkargo.id</p>
+          </div>
+          <div class="page-kontak__box-12">
+            <p class="page-kontak__text-13">Jam buka</p>
+            <p class="page-kontak__text-14">Senin–Sabtu 08.00–18.00</p>
+          </div>
+        </div>
+        <div class="page-kontak__box-13">
+          <div class="page-kontak__input-1-wrapper">
+            <label class="page-kontak__input-1__label" for="page-kontak__input-1-id">Nama</label>
+            <input id="page-kontak__input-1-id" type="text" class="page-kontak__input-1" placeholder="Nama lengkap" />
+          </div>
+          <div class="page-kontak__input-2-wrapper">
+            <label class="page-kontak__input-2__label" for="page-kontak__input-2-id">Email</label>
+            <input id="page-kontak__input-2-id" type="text" class="page-kontak__input-2" placeholder="email&#64;anda.com" />
+          </div>
+          <div class="page-kontak__select-1-wrapper">
+            <label class="page-kontak__select-1__label" for="page-kontak__select-1-id">Keperluan</label>
+            <select id="page-kontak__select-1-id" class="page-kontak__select-1">
+              <option value="" disabled selected>Pilih</option>
+              <option value="Kargo laut">Kargo laut</option>
+              <option value="Kargo udara">Kargo udara</option>
+              <option value="Gudang &amp; fulfilment">Gudang &amp; fulfilment</option>
+              <option value="Kepabeanan">Kepabeanan</option>
+            </select>
+          </div>
+          <div class="page-kontak__textarea-1">
+            <label class="page-kontak__textarea-1__label" for="page-kontak__textarea-1-input">Pesan</label>
+            <textarea class="page-kontak__textarea-1__input" id="page-kontak__textarea-1-input" name="pesan" rows="4"></textarea>
+          </div>
+          <button type="submit" class="page-kontak__button-1">Kirim</button>
+          <p class="page-kontak__text-15">Kami membalas di hari kerja yang sama.</p>
+        </div>
+      </div>
+    </section>
+    <section class="page-kontak__box-14">
+      <div class="page-kontak__box-15">
+        <div class="page-kontak__box-16">
+          <h2 class="page-kontak__text-16 owd-anim owd-anim--fade-up" data-owd-trigger="scroll">Kirim detail barang, kami hitung rutenya</h2>
+          <p class="page-kontak__text-17">Tim kami membalas dengan tarif, estimasi waktu, dan dokumen yang dibutuhkan.</p>
+          <div class="page-kontak__box-17">
+            <a href="kontak.html" class="page-kontak__anchor-1">Minta penawaran</a>
+          </div>
+        </div>
+        <div class="page-kontak__box-18">
+          <h2 class="page-kontak__text-18 owd-anim owd-anim--fade-up" data-owd-trigger="scroll">Mampir atau telepon</h2>
+          <p class="page-kontak__text-19">Jl. Yos Sudarso Kav. 30, Jakarta Utara · 021 4390 2211 · Senin–Sabtu 08.00–18.00</p>
+          <div class="page-kontak__box-19">
+            <a href="mailto:quote&#64;orbitkargo.id" class="page-kontak__anchor-2">Kirim email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="page-kontak__box-20">
+      <div class="page-kontak__box-21">
+        <div class="page-kontak__box-22">
+          <h4 class="page-kontak__text-20">Orbit Kargo</h4>
+          <p class="page-kontak__text-21">Forwarder independen dengan 140 staf di 5 kota dan agen di 42 pelabuhan dunia.</p>
+          <ul class="page-kontak__social-links-1" aria-label="Media sosial">
+            <li>
+              <a class="page-kontak__social-links-1__link" href="https://linkedin.com/company/orbitkargo" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <span class="page-kontak__social-links-1__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true" focusable="false"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></span>
+              </a>
+            </li>
+            <li>
+              <a class="page-kontak__social-links-1__link" href="https://wa.me/622143902211" aria-label="WhatsApp" title="WhatsApp" target="_blank" rel="noopener noreferrer">
+                <span class="page-kontak__social-links-1__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-kontak__box-23">
+          <p class="page-kontak__text-22">Halaman</p>
+          <ul class="page-kontak__list-1">
+            <li>Layanan</li>
+            <li>Jaringan</li>
+            <li>Tarif</li>
+            <li>Tentang</li>
+            <li>Wawasan</li>
+            <li>Kontak</li>
+          </ul>
+        </div>
+        <div class="page-kontak__box-24">
+          <p class="page-kontak__text-23">Kontak</p>
+          <ul class="page-kontak__list-2">
+            <li>Jl. Yos Sudarso Kav. 30, Jakarta Utara</li>
+            <li>021 4390 2211</li>
+            <li>quote&#64;orbitkargo.id</li>
+            <li>Senin–Sabtu 08.00–18.00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-kontak__box-25">
+        <p class="page-kontak__text-24">© 2026 Orbit Kargo. Konten contoh.</p>
+        <button class="page-kontak__back-to-top-1" type="button" aria-label="Ke atas" data-offset="400">
+          <span class="page-kontak__back-to-top-1__icon" aria-hidden="true">↑</span>
+        </button>
+      </div>
+    </footer>
+  </main>
+  <script src="assets/kontak.js"></script>
+</body>
+</html>

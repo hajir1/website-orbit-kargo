@@ -1,0 +1,1307 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap");
+
+/* Variabel global */
+:root {
+  --owd-anim-duration: 700ms;
+  --owd-anim-delay: 0ms;
+  --owd-anim-easing: cubic-bezier(0.22, 1, 0.36, 1);
+  --owd-anim-distance: 24px;
+  --owd-anim-once: 1;
+  --font-seriff: "seriff", serif;
+  --color-primary: #3b68f0;
+  --color-secondary: #0f172a;
+  --color-text: #1f2937;
+  --color-muted: #64748b;
+  --color-surface: #ffffff;
+  --font-heading: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --radius: 8px;
+  --space: 16px;
+}
+
+/* Layout */
+.page-tarif {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: stretch;
+  background: #ffffff;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.page-tarif__box-1 {
+  box-sizing: border-box;
+  display: block;
+  padding: 18px 24px;
+  background: #ffffff;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.page-tarif__box-2 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1120px;
+  min-width: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-tarif__box-3 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.page-tarif__box-4 {
+  box-sizing: border-box;
+  display: block;
+  padding: clamp(40px, 27.48px + 3.48vw, 72px) 24px;
+  background: #f3f6fb;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.page-tarif__box-5 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1120px;
+  min-width: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-tarif__box-6 {
+  box-sizing: border-box;
+  display: block;
+  padding: clamp(48px, 32.35px + 4.35vw, 88px) 24px;
+  background: #f3f6fb;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.page-tarif__box-7 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1120px;
+  min-width: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-tarif__box-8 {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  align-items: stretch;
+  justify-items: stretch;
+  width: 100%;
+  max-width: 1120px;
+  min-width: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-tarif__box-9 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: stretch;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.page-tarif__box-10 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: stretch;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.page-tarif__box-11 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: stretch;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.page-tarif__box-12 {
+  box-sizing: border-box;
+  display: block;
+  padding: clamp(48px, 32.35px + 4.35vw, 88px) 24px;
+  background: #ffffff;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.page-tarif__box-13 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1000px;
+  min-width: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-tarif__box-14 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1000px;
+  min-width: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-tarif__box-15 {
+  box-sizing: border-box;
+  display: block;
+  padding: clamp(53px, 36.17px + 4.67vw, 96px) 24px;
+  background: #dbeafe;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.page-tarif__box-16 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  min-width: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-tarif__box-17 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.page-tarif__box-18 {
+  box-sizing: border-box;
+  display: block;
+  padding: clamp(32px, 22.61px + 2.61vw, 56px) 24px;
+  background: #0b1324;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.page-tarif__box-19 {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) minmax(0, 1fr);
+  gap: 32px;
+  align-items: start;
+  justify-items: stretch;
+  width: 100%;
+  max-width: 1120px;
+  min-width: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-tarif__box-20 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.page-tarif__box-21 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.page-tarif__box-22 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.page-tarif__box-23 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1120px;
+  min-width: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 640px) {
+  .page-tarif__box-8 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .page-tarif__box-19 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Text — H4 */
+.page-tarif__text-1 {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  border: 0px none #1e40af;
+  border-radius: 0px;
+  background: transparent;
+  color: #0b1324;
+  font-family: inherit;
+  font-size: 22px;
+  font-weight: 700;
+  overflow-wrap: break-word;
+  text-align: left;
+  letter-spacing: 0px;
+  text-transform: none;
+  text-decoration: none;
+  cursor: auto;
+  transition: all 150ms ease;
+}
+
+/* Mega Menu — Mega Menu */
+.page-tarif__mega-menu-1 {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  width: 100%;
+  font-size: 15px;
+  color: #0b1324;
+}
+.page-tarif__mega-menu-1__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.page-tarif__mega-menu-1__item {
+  position: static;
+}
+.page-tarif__mega-menu-1__top {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 10px;
+  background: none;
+  color: inherit;
+  font: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+.page-tarif__mega-menu-1__top:hover,
+.page-tarif__mega-menu-1__top:focus-visible,
+.page-tarif__mega-menu-1__item.is-open > .page-tarif__mega-menu-1__top {
+  color: #2f80ed;
+  background: color-mix(in srgb, #2f80ed 8%, transparent);
+}
+.page-tarif__mega-menu-1__caret {
+  font-size: 10px;
+  transition: transform 0.2s ease;
+}
+.page-tarif__mega-menu-1__item.is-open .page-tarif__mega-menu-1__caret {
+  transform: rotate(180deg);
+}
+.page-tarif__mega-menu-1__panel {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  z-index: 30;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 24px 48px -16px rgba(15, 23, 42, 0.25);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
+}
+.page-tarif__mega-menu-1__item:hover > .page-tarif__mega-menu-1__panel,
+.page-tarif__mega-menu-1__item:focus-within > .page-tarif__mega-menu-1__panel,
+.page-tarif__mega-menu-1__item.is-open > .page-tarif__mega-menu-1__panel {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.page-tarif__mega-menu-1__link {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+.page-tarif__mega-menu-1__link:hover,
+.page-tarif__mega-menu-1__link:focus-visible {
+  background: color-mix(in srgb, #2f80ed 8%, transparent);
+}
+.page-tarif__mega-menu-1__link strong {
+  display: block;
+  font-size: 14px;
+}
+.page-tarif__mega-menu-1__link span {
+  display: block;
+  margin-top: 2px;
+  font-size: 13px;
+  color: #64748b;
+}
+.page-tarif__mega-menu-1__cta {
+  margin-left: 8px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: #2f80ed;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+}
+.page-tarif__mega-menu-1__drawer {
+  display: contents;
+}
+.page-tarif__mega-menu-1__burger {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .page-tarif__mega-menu-1 { order: 2; flex-wrap: nowrap; width: auto; }
+  .page-tarif__mega-menu-1__burger { display: inline-flex; flex-direction: column; justify-content: center; gap: 5px; width: 44px; height: 44px; padding: 0 11px; border: 0; border-radius: 10px; background: none; color: inherit; cursor: pointer; box-sizing: border-box; }
+  .page-tarif__mega-menu-1__burger span { display: block; height: 2px; border-radius: 2px; background: currentColor; transition: transform 0.2s ease, opacity 0.2s ease; }
+  .page-tarif__mega-menu-1.is-menu-open .page-tarif__mega-menu-1__burger span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .page-tarif__mega-menu-1.is-menu-open .page-tarif__mega-menu-1__burger span:nth-child(2) { opacity: 0; }
+  .page-tarif__mega-menu-1.is-menu-open .page-tarif__mega-menu-1__burger span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  .page-tarif__mega-menu-1__drawer { position: absolute; top: calc(100% + 8px); right: 0; z-index: 60; display: none; flex-direction: column; width: min(340px, calc(100vw - 64px)); max-height: calc(100vh - 120px); overflow-y: auto; padding: 10px; border: 1px solid color-mix(in srgb, currentColor 14%, transparent); border-radius: 16px; background: #ffffff; box-shadow: 0 24px 48px -16px rgba(15, 23, 42, 0.35); box-sizing: border-box; }
+  .page-tarif__mega-menu-1.is-menu-open .page-tarif__mega-menu-1__drawer { display: flex; }
+  .page-tarif__mega-menu-1__list { flex-direction: column; align-items: stretch; width: 100%; }
+  .page-tarif__mega-menu-1__top { width: 100%; justify-content: space-between; box-sizing: border-box; }
+  .page-tarif__mega-menu-1__panel { position: static; display: none; grid-template-columns: minmax(0, 1fr); margin: 2px 0 6px; padding: 4px 0 4px 8px; border: 0; background: none; box-shadow: none; opacity: 1; visibility: visible; transform: none; }
+  .page-tarif__mega-menu-1__item:hover > .page-tarif__mega-menu-1__panel, .page-tarif__mega-menu-1__item:focus-within > .page-tarif__mega-menu-1__panel { display: none; }
+  .page-tarif__mega-menu-1__item.is-open > .page-tarif__mega-menu-1__panel { display: grid; }
+  .page-tarif__mega-menu-1__link span { color: inherit; opacity: 0.7; }
+  .page-tarif__mega-menu-1__cta { margin: 8px 0 0; text-align: center; }
+}
+
+/* Text — Paragraf */
+.page-tarif__text-2 {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  border: 0px none #1e40af;
+  border-radius: 0px;
+  background: transparent;
+  color: #2f80ed;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  overflow-wrap: break-word;
+  text-align: left;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: auto;
+  transition: all 150ms ease;
+}
+
+/* Text — H1 */
+.page-tarif__text-3 {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  border: 0px none #1e40af;
+  border-radius: 0px;
+  background: transparent;
+  color: #0b1324;
+  font-family: inherit;
+  font-size: clamp(2.25rem, 1.908rem + 1.522vw, 3.125rem);
+  font-weight: 800;
+  overflow-wrap: break-word;
+  text-align: left;
+  letter-spacing: -1px;
+  text-transform: none;
+  text-decoration: none;
+  cursor: auto;
+  transition: all 150ms ease;
+}
+
+/* Text — H2 */
+.page-tarif__text-4 {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  border: 0px none #1e40af;
+  border-radius: 0px;
+  background: transparent;
+  color: #0b1324;
+  font-family: inherit;
+  font-size: clamp(1.688rem, 1.418rem + 1.196vw, 2.375rem);
+  font-weight: 800;
+  overflow-wrap: break-word;
+  text-align: center;
+  letter-spacing: 0px;
+  text-transform: none;
+  text-decoration: none;
+  cursor: auto;
+  transition: all 150ms ease;
+}
+
+/* Kartu Harga — Harga */
+.page-tarif__pricing-1 {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  padding: 28px 24px;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #0b1324;
+  border: 1px solid #e5e7eb;
+}
+.page-tarif__pricing-1__badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #2f80ed;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+}
+.page-tarif__pricing-1__plan {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+.page-tarif__pricing-1__desc {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.75;
+}
+.page-tarif__pricing-1__price {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+.page-tarif__pricing-1__amount {
+  font-size: 36px;
+  font-weight: 800;
+}
+.page-tarif__pricing-1__period {
+  opacity: 0.7;
+}
+.page-tarif__pricing-1__features {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+.page-tarif__pricing-1__features li::before {
+  content: "✓";
+  margin-right: 8px;
+  color: #2f80ed;
+  font-weight: 700;
+}
+.page-tarif__pricing-1__button {
+  display: inline-block;
+  margin-top: auto;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: #2f80ed;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+}
+.page-tarif__pricing-1__button:hover {
+  opacity: 0.9;
+}
+
+/* Kartu Harga — Harga */
+.page-tarif__pricing-2 {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  padding: 28px 24px;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #0b1324;
+  border: 2px solid #2f80ed;
+  box-shadow: 0 16px 40px rgba(37, 99, 235, 0.15);
+}
+.page-tarif__pricing-2__badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #2f80ed;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+}
+.page-tarif__pricing-2__plan {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+.page-tarif__pricing-2__desc {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.75;
+}
+.page-tarif__pricing-2__price {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+.page-tarif__pricing-2__amount {
+  font-size: 36px;
+  font-weight: 800;
+}
+.page-tarif__pricing-2__period {
+  opacity: 0.7;
+}
+.page-tarif__pricing-2__features {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+.page-tarif__pricing-2__features li::before {
+  content: "✓";
+  margin-right: 8px;
+  color: #2f80ed;
+  font-weight: 700;
+}
+.page-tarif__pricing-2__button {
+  display: inline-block;
+  margin-top: auto;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: #2f80ed;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+}
+.page-tarif__pricing-2__button:hover {
+  opacity: 0.9;
+}
+
+/* Kartu Harga — Harga */
+.page-tarif__pricing-3 {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  padding: 28px 24px;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #0b1324;
+  border: 1px solid #e5e7eb;
+}
+.page-tarif__pricing-3__badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #2f80ed;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+}
+.page-tarif__pricing-3__plan {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+.page-tarif__pricing-3__desc {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.75;
+}
+.page-tarif__pricing-3__price {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+.page-tarif__pricing-3__amount {
+  font-size: 36px;
+  font-weight: 800;
+}
+.page-tarif__pricing-3__period {
+  opacity: 0.7;
+}
+.page-tarif__pricing-3__features {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+.page-tarif__pricing-3__features li::before {
+  content: "✓";
+  margin-right: 8px;
+  color: #2f80ed;
+  font-weight: 700;
+}
+.page-tarif__pricing-3__button {
+  display: inline-block;
+  margin-top: auto;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: #2f80ed;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+}
+.page-tarif__pricing-3__button:hover {
+  opacity: 0.9;
+}
+
+/* Text — H2 */
+.page-tarif__text-5 {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  border: 0px none #1e40af;
+  border-radius: 0px;
+  background: transparent;
+  color: #0b1324;
+  font-family: inherit;
+  font-size: clamp(1.688rem, 1.418rem + 1.196vw, 2.375rem);
+  font-weight: 800;
+  overflow-wrap: break-word;
+  text-align: left;
+  letter-spacing: 0px;
+  text-transform: none;
+  text-decoration: none;
+  cursor: auto;
+  transition: all 150ms ease;
+}
+
+/* Tabel Perbandingan — Tabel Perbandingan */
+.page-tarif__comparison-table-1 {
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  -webkit-overflow-scrolling: touch;
+}
+.page-tarif__comparison-table-1 table {
+  width: 100%;
+  min-width: 520px;
+  border-collapse: collapse;
+  color: #0b1324;
+  font-size: 14px;
+}
+.page-tarif__comparison-table-1 caption {
+  padding: 14px 16px;
+  font-weight: 700;
+  text-align: left;
+}
+.page-tarif__comparison-table-1 th,
+.page-tarif__comparison-table-1 td {
+  padding: 14px 16px;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+}
+.page-tarif__comparison-table-1 thead th {
+  background: #f3f6fb;
+  font-weight: 700;
+}
+.page-tarif__comparison-table-1 tbody th {
+  position: sticky;
+  left: 0;
+  background: #ffffff;
+  font-weight: 600;
+  text-align: left;
+}
+.page-tarif__comparison-table-1__yes {
+  color: #16a34a;
+  font-size: 18px;
+  font-weight: 800;
+}
+.page-tarif__comparison-table-1__no {
+  color: #cbd5e1;
+  font-size: 18px;
+  font-weight: 800;
+}
+.page-tarif__comparison-table-1 th:nth-child(3),
+.page-tarif__comparison-table-1 td:nth-child(3) {
+  background: color-mix(in srgb, #2f80ed 7%, #ffffff);
+}
+.page-tarif__comparison-table-1 thead th:nth-child(3) {
+  background: #2f80ed;
+  color: #ffffff;
+}
+
+/* Text — H2 */
+.page-tarif__text-6 {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  border: 0px none #1e40af;
+  border-radius: 0px;
+  background: transparent;
+  color: #0b1324;
+  font-family: inherit;
+  font-size: clamp(2.438rem, 2.071rem + 1.63vw, 3.375rem);
+  font-weight: 800;
+  overflow-wrap: break-word;
+  text-align: center;
+  letter-spacing: -1px;
+  text-transform: none;
+  text-decoration: none;
+  cursor: auto;
+  transition: all 150ms ease;
+}
+
+/* Text — Paragraf */
+.page-tarif__text-7 {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  border: 0px none #1e40af;
+  border-radius: 0px;
+  background: transparent;
+  color: #55627a;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 400;
+  overflow-wrap: break-word;
+  text-align: center;
+  letter-spacing: 0px;
+  text-transform: none;
+  text-decoration: none;
+  cursor: auto;
+  transition: all 150ms ease;
+}
+
+/* Anchor / Link — Tombol tautan */
+.page-tarif__anchor-1 {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0px 0px 0px 0px;
+  padding: 12px 22px 12px 22px;
+  border: 0px none #1e40af;
+  border-radius: 0px;
+  background: #2f80ed;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  overflow-wrap: break-word;
+  text-align: center;
+  letter-spacing: 0px;
+  text-transform: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 150ms ease;
+}
+
+.page-tarif__anchor-1:hover {
+  background: #1b4fa0;
+  color: #ffffff;
+  border-color: #1b4fa0;
+  transform: none;
+}
+
+/* Text — H4 */
+.page-tarif__text-8 {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  border: 0px none #1e40af;
+  border-radius: 0px;
+  background: transparent;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 22px;
+  font-weight: 700;
+  overflow-wrap: break-word;
+  text-align: left;
+  letter-spacing: 0px;
+  text-transform: none;
+  text-decoration: none;
+  cursor: auto;
+  transition: all 150ms ease;
+}
+
+/* Text — Paragraf */
+.page-tarif__text-9 {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  border: 0px none #1e40af;
+  border-radius: 0px;
+  background: transparent;
+  color: #cbd5e1;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  overflow-wrap: break-word;
+  text-align: left;
+  letter-spacing: 0px;
+  text-transform: none;
+  text-decoration: none;
+  cursor: auto;
+  transition: all 150ms ease;
+}
+
+/* Tautan Sosial — Tautan Sosial */
+.page-tarif__social-links-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.page-tarif__social-links-1__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 4px;
+  background: #ffffff1a;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+.page-tarif__social-links-1__link:hover,
+.page-tarif__social-links-1__link:focus-visible {
+  background: #2f80ed;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+.page-tarif__social-links-1__link:focus-visible {
+  outline: 2px solid #2f80ed;
+  outline-offset: 3px;
+}
+.page-tarif__social-links-1__link svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+@media (prefers-reduced-motion: reduce) {
+  .page-tarif__social-links-1__link { transition: none; }
+  .page-tarif__social-links-1__link:hover, .page-tarif__social-links-1__link:focus-visible { transform: none; }
+}
+
+/* Text — Paragraf */
+.page-tarif__text-10 {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  border: 0px none #1e40af;
+  border-radius: 0px;
+  background: transparent;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  overflow-wrap: break-word;
+  text-align: left;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: auto;
+  transition: all 150ms ease;
+}
+
+/* List — Daftar */
+.page-tarif__list-1 {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0px 0px 0px 0px;
+  background: transparent;
+  border: 0px none #e5e7eb;
+  border-radius: 8px;
+  list-style-position: inside;
+  list-style-type: none;
+}
+
+.page-tarif__list-1 li {
+  display: list-item;
+  margin-bottom: 4px;
+  padding: 4px 0px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #cbd5e1;
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+.page-tarif__list-1 li:last-child {
+  margin-bottom: 0;
+}
+
+/* Text — Paragraf */
+.page-tarif__text-11 {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  border: 0px none #1e40af;
+  border-radius: 0px;
+  background: transparent;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  overflow-wrap: break-word;
+  text-align: left;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: auto;
+  transition: all 150ms ease;
+}
+
+/* List — Daftar */
+.page-tarif__list-2 {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0px 0px 0px 0px;
+  background: transparent;
+  border: 0px none #e5e7eb;
+  border-radius: 8px;
+  list-style-position: inside;
+  list-style-type: none;
+}
+
+.page-tarif__list-2 li {
+  display: list-item;
+  margin-bottom: 4px;
+  padding: 4px 0px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #cbd5e1;
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+.page-tarif__list-2 li:last-child {
+  margin-bottom: 0;
+}
+
+/* Text — Paragraf */
+.page-tarif__text-12 {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  border: 0px none #1e40af;
+  border-radius: 0px;
+  background: transparent;
+  color: #94a3b8;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 400;
+  overflow-wrap: break-word;
+  text-align: left;
+  letter-spacing: 0px;
+  text-transform: none;
+  text-decoration: none;
+  cursor: auto;
+  transition: all 150ms ease;
+}
+
+/* Kembali ke Atas — Kembali ke Atas */
+.page-tarif__back-to-top-1 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 48px;
+  height: 48px;
+  padding: 0 0px;
+  border: 0;
+  border-radius: 999px;
+  background: #2f80ed;
+  color: #ffffff;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 0 10px 25px -8px rgba(15, 23, 42, 0.5);
+  cursor: pointer;
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s, background-color 0.2s ease;
+}
+.page-tarif__back-to-top-1:hover,
+.page-tarif__back-to-top-1:focus-visible {
+  background: #1b4fa0;
+}
+.page-tarif__back-to-top-1:focus-visible {
+  outline: 2px solid #1b4fa0;
+  outline-offset: 3px;
+}
+.page-tarif__back-to-top-1__icon {
+  font-size: 20px;
+  line-height: 1;
+}
+.page-tarif__back-to-top-1__sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+/* Mengambang hanya setelah runtime aktif (Pratinjau & ekspor); di canvas Desain tetap di alur. */
+.page-tarif__back-to-top-1[data-ready] {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 900;
+}
+.page-tarif__back-to-top-1[data-ready]:not(.is-visible) {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .page-tarif__back-to-top-1 { transition: none; }
+}
+
+/* Animasi CSS (Pengaturan Global → Animasi & 3D) */
+.owd-anim {
+  animation-duration: var(--owd-anim-duration, 700ms);
+  animation-delay: var(--owd-anim-delay, 0ms);
+  animation-timing-function: var(--owd-anim-easing, cubic-bezier(0.22, 1, 0.36, 1));
+  animation-fill-mode: both;
+}
+@keyframes owd-fade-up {
+  from { opacity: 0; transform: translate3d(0, var(--owd-anim-distance, 24px), 0); } to { opacity: 1; transform: none; }
+}
+.owd-anim--fade-up {
+  animation-name: owd-fade-up;
+}
+.owd-motion .owd-anim[data-owd-trigger="scroll"]:not(.owd-in) {
+  animation-name: none;
+  opacity: 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .owd-anim,
+  .owd-hover {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+  }
+}
+
+/* Custom CSS */
+/* Grup “Halaman” */
+.page-tarif {
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #ffffff;
+}
+
+/* Text “H4” */
+.page-tarif__text-1 {
+  line-height: 1.3;
+  font-family: "Sora", sans-serif;
+}
+
+/* Text “Paragraf” */
+.page-tarif__text-2 {
+  line-height: 1.6;
+}
+
+/* Text “H1” */
+.page-tarif__text-3 {
+  line-height: 1.15;
+}
+.page-tarif__text-3 {
+  font-family: "Sora", sans-serif;
+}
+
+/* Row “Row” */
+.page-tarif__box-7 {
+  margin-bottom: 32px;
+}
+
+/* Text “H2” */
+.page-tarif__text-4 {
+  line-height: 1.15;
+}
+.page-tarif__text-4 {
+  font-family: "Sora", sans-serif;
+}
+
+/* Row “Row” */
+.page-tarif__box-13 {
+  margin-bottom: 32px;
+}
+
+/* Text “H2” */
+.page-tarif__text-5 {
+  line-height: 1.15;
+}
+.page-tarif__text-5 {
+  font-family: "Sora", sans-serif;
+}
+
+/* Text “H2” */
+.page-tarif__text-6 {
+  line-height: 1.15;
+}
+.page-tarif__text-6 {
+  font-family: "Sora", sans-serif;
+}
+
+/* Text “Paragraf” */
+.page-tarif__text-7 {
+  line-height: 1.6;
+}
+
+/* Row “Row Kolom” */
+.page-tarif__box-19 {
+  margin-bottom: 32px;
+}
+
+/* Text “H4” */
+.page-tarif__text-8 {
+  line-height: 1.3;
+  font-family: "Sora", sans-serif;
+}
+
+/* Text “Paragraf” */
+.page-tarif__text-9 {
+  line-height: 1.6;
+}
+
+/* Text “Paragraf” */
+.page-tarif__text-10 {
+  line-height: 1.6;
+}
+
+/* Text “Paragraf” */
+.page-tarif__text-11 {
+  line-height: 1.6;
+}
+
+/* Text “Paragraf” */
+.page-tarif__text-12 {
+  line-height: 1.6;
+}
